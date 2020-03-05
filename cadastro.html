@@ -33,7 +33,7 @@
             <h1>cadastro de jogador</h1>
         </div>
 
-        <form action="" method="post">
+        <form class="form_cadastro" action="" method="post">
 
             <div class="campo">
                 <label for="nome">nome do jogador</label>
@@ -62,16 +62,16 @@
 
             <div class="campo">
                 <label for="nascimento">nascimento</label>
-                <input type="date" name="nascimento" id="nascimento" >
+                <input type="date" name="nascimento" id="nascimento" max="2020-03-05">
             </div>
 
             <div class="campo">
                 <label for="pais">país</label>
                 <select name="pais" id="pais">
-                    <option value="">Selecione outra opção</option>
+                    <option value="">Selecione uma opção</option>
                     <option value="BR">Brasil</option>
                     <option value="EUA">Estados Unidos</option>
-                    <option value="ES">espanha</option>
+                    <option value="ES">Espanha</option>
                 </select>
             </div>
 
@@ -92,12 +92,12 @@
 
             </fieldset>
 
-            <div class="campo">
+            <div class="campo termos">
                 <input type="checkbox" name="check" id="check">
                 <label for="check">Declaro que li e aceito os termos de uso desse site</label>
             </div>
 
-            <button type="submit">cadastrar</button>
+            <button class="btn gradient" type="submit">cadastrar</button>
 
         </form>
 
