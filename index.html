@@ -13,10 +13,15 @@
 <body>
     <header>
         <div class="container cabecalho">
-            <a href="index.html">
-                <img src="imagens/Logo.svg" alt="logo do site E-players">
+            <div>
+                <a href="#" onclick="botaoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="index.html">
+                    <img src="imagens/Logo.svg" alt="logo do site E-players">
+            </div>
             </a>
-            <nav>
+            <nav id="menu">
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
                     <li><a href="#horarios" title="ir ate a seção de horarios da partida">HORÁRIOS</a></li>
@@ -271,6 +276,17 @@
         </div>
         <p>© Copyright 2077 - Todos os direitos reservados ao SENAI de informatica</p>
     </footer>
+    <script>
+        function botaoMenu(){
+
+        var m = document.getElementById("menu")
+        if(m.style.display == "block"){
+            m.style.display = "none";
+        }else{
+            m.style.display = "block"
+        }
+    }
+    </script>
 
 </body>
 </html>
