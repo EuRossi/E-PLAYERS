@@ -551,4 +551,9 @@ fieldset label{
     footer .container{
         flex-direction: column;
     }
+
+    footer h6{
+        text-align: start;
+
+    }
 }
